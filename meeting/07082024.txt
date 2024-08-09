@@ -11,6 +11,7 @@ Discussed possible meeting with CV (computer vision) team
 Powertrain Team (B) generated 3-D CAD models of "LineLazer"
 - Size requirements
 - Part list Cost and Items
+- Max speed 6 to 10 kmh
 Discussed storage space updates on Macro Lab
 Data Acquisition Team (A)
 - Linux Touch Screen operational
