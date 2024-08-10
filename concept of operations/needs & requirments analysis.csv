@@ -1,6 +1,6 @@
 Category,Subcategory,Requirement,Description,Solution
 Vehicle Performance,Positional Accuracy,Centimeter-Level Accuracy,"The rover must maintain positional accuracy within centimeters.",Implement high-precision GPS (RTK) and integrate calibration protocols.
-Vehicle Performance,Speed and Terrain Navigation,Walking Speed and Rough Terrain,"The rover should operate at walking speed and navigate rough terrain effectively.",Utilize a robust 1/5 scale RC vehicle with advanced suspension and high-torque motors. Include terrain analysis sensors (Lidar, Sonar).
+Vehicle Performance,Speed and Terrain Navigation,Walking Speed and Rough Terrain,"The rover should operate at walking speed and navigate rough terrain effectively.",Utilize a robust 1/5 scale RC vehicle with advanced suspension and high-torque motors. Include terrain analysis sensors (Lidar Sonar).
 Vehicle Performance,Waypoint Navigation,Waypoint Following,"The rover must follow waypoints from the Grover Planner accurately.",Develop path planning algorithms and integrate with ROS to process waypoints and plot courses.
 Vehicle Performance,Drawing Mechanism,Precise Control of Line Marking Drum,"Precise control of the line marking drum to draw accurate lines.",Implement software for drum control and synchronization with vehicle movement.
 Vehicle Performance,Progress Reporting,Real-Time Status Transmission,"Real-time transmission of progress and status to the ROS system.",Develop a communication module for data reporting and integrate with the main ROS system.
@@ -13,7 +13,7 @@ Hardware Requirements,Line Marking Drum,Reliable and Precise Marking,"Reliable a
 Hardware Requirements,Power Supply,Sufficient Power,"Sufficient power for extended operation.",High-capacity batteries (e.g., LiPo, Li-Ion) with an efficient battery management system.
 Hardware Requirements,Onboard Computer,Processing and Control,"Processing and control of onboard systems.",Raspberry Pi or equivalent computing platform with necessary I/O capabilities.
 Hardware Requirements,Communication Systems,Reliable Long-Range Communication,"Reliable long-range communication.",Implement long-range radio systems and optional Wi-Fi or LTE modules.
-Software Requirements,Navigation and Control,Manage Navigation and Waypoint Processing,"Manage navigation, waypoint processing, and vehicle control.",Utilize ROS framework for managing navigation, control, and data processing.
+Software Requirements,Navigation and Control,Manage Navigation and Waypoint Processing,"Manage navigation, waypoint processing, and vehicle control.",Utilize ROS framework for managing navigation control and data processing.
 Software Requirements,Drawing Control,Control of Line Marking Drum,"Control the line marking drum accurately.",Develop software for precise control of the drawing mechanism.
 Software Requirements,Progress Reporting,Real-Time Reporting,"Report status and progress in real-time.",Implement a reporting module integrated with ROS for real-time updates.
 Software Requirements,Terrain Mapping,Process Terrain Data,"Process terrain data and avoid obstacles.",Use Lidar data for mapping and develop algorithms for terrain analysis and obstacle avoidance.
@@ -21,5 +21,5 @@ Software Requirements,Telemetry and Data Logging,Record Performance Data,"Record
 Software Requirements,User Interface,Remote Monitoring and Control,"Remote monitoring and control interface.",Create a dashboard for real-time monitoring and control.
 Integration and Testing,System Integration,Seamless Integration,"Ensure seamless integration of hardware and software.",Integrate all components and test for compatibility and functionality.
 Integration and Testing,Testing Protocols,Validation of Performance,"Validate accuracy, terrain navigation, and drawing performance.",Conduct extensive testing in controlled and field environments.
-Integration and Testing,Calibration,Ensure Accurate Calibration,"Ensure accurate sensor and system calibration.",Implement calibration routines for GPS, Lidar, and other sensors.
+Integration and Testing,Calibration,Ensure Accurate Calibration,"Ensure accurate sensor and system calibration.",Implement calibration routines for GPS Lidar, and other sensors.
 Integration and Testing,Safety and Reliability,Reliable and Safe Operation,"Ensure reliable and safe operation under various conditions.",Develop and test safety protocols and reliability measures.
