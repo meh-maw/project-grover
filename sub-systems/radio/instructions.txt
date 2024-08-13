@@ -1,0 +1,87 @@
+Part 1: Setting Up the Raspberry Pi to Receive Information
+Step 1: Prepare the Raspberry Pi
+Install Raspberry Pi OS:
+If you haven't already, install Raspberry Pi OS on your Raspberry Pi 4 Model B. You can use the Raspberry Pi Imager tool to do this.
+Update and Upgrade the Raspberry Pi:
+Open a terminal and run:
+    sudo apt-get update
+    sudo apt-get upgrade
+Enable the Serial Port:
+Run raspi-config:
+    sudo raspi-config
+Navigate to Interfacing Options > Serial.
+When prompted, disable the login shell over serial (select No).
+Enable the serial hardware (select Yes).
+Reboot the Raspberry Pi:
+    sudo reboot
+
+Step 2: Connect the RFD900x Radio to the Raspberry Pi
+Connect the Pins:
+TX (Transmit) on the RFD900x to RX (Receive) on the Raspberry Pi (usually GPIO 15, Pin 10).
+RX (Receive) on the RFD900x to TX (Transmit) on the Raspberry Pi (usually GPIO 14, Pin 8).
+GND on the RFD900x to GND on the Raspberry Pi (any ground pin).
+VCC on the RFD900x to a 5V pin on the Raspberry Pi (typically Pin 2 or Pin 4).
+Power On the Raspberry Pi:
+Ensure the RFD900x radio is properly connected and powered via the Raspberry Pi.
+
+Step 3: Install Python and pyserial
+Install Python and pyserial:
+If Python isn't already installed:
+    sudo apt-get install python3
+Install the pyserial library:
+    pip3 install pyserial
+
+Step 4: Run python script to recieve data
+    python3 rfd900x_receive.py
+
+Part 2: Configuring the RFD900x Radios
+Step 1: Install and Use the SiK Radio Configuration Tool
+Install the SiK Radio Configuration Tool:
+Download and install the SiK Radio Configuration Tool (typically part of the Mission Planner or APM Planner software).
+Connect the First RFD900x to the Computer:
+Use a USB to Serial adapter to connect the first RFD900x to your computer.
+Open the SiK Radio Configuration Tool:
+Select the correct COM port and set the baud rate to 57600.
+Click “Load Settings” to view the current settings of the radio.
+Configure the Radio:
+Set one radio as the Local Radio (e.g., on the Raspberry Pi) and the other as the Remote Radio (e.g., on the computer).
+Ensure both radios have the same settings, such as Net ID, Baud Rate (57600), and Air Speed.
+Save Settings:
+Click “Save Settings” after configuring both radios.
+
+Step 2: Connect the Second RFD900x to the Raspberry Pi
+Connect the Second RFD900x to the Raspberry Pi:
+Follow the same connection setup as described in Part 1, Step 2.
+
+Part 3: Setting Up the Computer for Communication
+Step 1: Identify the Correct Serial Port on the Computer
+Windows:
+Open Device Manager and find the correct COM port under Ports (COM & LPT).
+Linux:
+Use the command:
+    ls /dev/ttyUSB*
+The output will show ports like /dev/ttyUSB0, which you’ll use in your serial terminal program.
+
+Step 2: Install and Use a Serial Terminal Program
+Install a Serial Terminal Program:
+On Windows, download and install PuTTY.
+On Linux, install minicom:
+    sudo apt-get install minicom
+Open the Serial Terminal:
+PuTTY on Windows:
+Select Serial as the connection type.
+Set the Serial line to the identified COM port (e.g., COM3).
+Set the Speed to 57600.
+Click Open to start the session.
+minicom on Linux:
+Start minicom with the correct port and baud rate:
+    sudo minicom -b 57600 -D /dev/ttyUSB0
+
+Step 3: Test Communication
+Run the Raspberry Pi Script:
+Ensure the rfd900x_receive.py script is running on the Raspberry Pi.
+Send Data from the Computer:
+In the serial terminal, type a message (e.g., "Hello from Computer") and press Enter.
+You should see the message received by the Raspberry Pi and a response sent back.
+Observe the Communication:
+The Raspberry Pi should print the received message and send a response back to the computer, which you should see in your terminal.
