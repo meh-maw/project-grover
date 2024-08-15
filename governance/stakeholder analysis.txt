@@ -1,0 +1,9 @@
+Stakeholder, Role, Responsibility, Power Level, Interest Level
+Tech-Launcher, Oversight resources mentorship, Align project with educational goals provide support and evaluate progress, Medium, High
+Capstone, Oversight resources mentorship, Align project with educational goals provide support and evaluate progress, Medium, High
+ANU Teaching Team, Academic support and evaluation, Offer technical advice monitor progress and assess academic merit, High, High
+Project Host (ANU College of Arts), Primary client, Define scope provide resources validate deliverables, High, High
+Graco Line Marking Machine Company, Equipment provider, Permit use of LineLazer, Medium, Low
+Transbot-Jetson RC Vehicle Company, RC vehicle supplier, Initial testing carried out on Jetson Tank, Medium, Low
+Vendors, Component suppliers, Ensure timely delivery of parts and provide specifications, High, Low
+Team Grover, Execute project, Develop and deliver the autonomous line drawing machine manage tasks coordinate stakeholders, High, High
