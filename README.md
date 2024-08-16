@@ -8,6 +8,7 @@ Team Timeline - https://vikalpshendekar650s-team-company.monday.com/boards/18993
 
 <details>
 <summary>Click here for instructions on how to push and pull commits to the repository</summary>
+  
 ## Table of Contents
 1. [Getting Started](#getting-started)
 2. [Creating a New Branch](#creating-a-new-branch)
