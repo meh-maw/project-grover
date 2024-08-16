@@ -25,9 +25,8 @@ The repository is organized into three main directories under the root/home dire
 ### 3. **`technical/`**
    - **Purpose**: The `technical` directory houses all the technical documentation, codebase, and resources related to the development of the project. This is the core directory where all technical work is organized and managed.
    - **Contents**:
-     - **Source Code**: The main codebase of the project, organized by modules or components.
+     - **sub-systems**: code and technical documents for each sub-systems
      - **Technical Documentation**: Manuals, API documentation, architecture diagrams, and other technical resources.
-     - **Scripts & Tools**: Any scripts or tools used for building, testing, or deploying the project.
 </details>
 
 <details>
