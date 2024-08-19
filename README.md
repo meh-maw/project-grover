@@ -1,28 +1,12 @@
 # Project Grover
 website - https://sites.google.com/view/project-grover/home
 
-Team Timeline - https://vikalpshendekar650s-team-company.monday.com/boards/1899370937
-
 <details>
 <summary>Repository structure and information on directories</summary>
 The repository is organized into three main directories under the root/home directory. Each directory serves a specific purpose, ensuring a clean and organized project structure.
 
 ## Directory Overview
-
-### 1. **`admin/`**
-   - **Purpose**: The `admin` directory contains files and documents related to the administration and management of the project.
-   - **Contents**:
-     - **[Audit](admin/audit)**: Audit documents including presentations and feedback response
-     - **[Meeting Minutes]("admin/meeting%minutes")**: Agendas, minutes, and summaries of project meetings .
-     - **[Decision-Making Processes](admin/decision%logs)**: Documents detailing how decisions are made within the project.
-
-### 2. **`governance/`**
-   - **Purpose**: The `governance` directory is dedicated to the policies, guidelines, and processes that govern the project.
-   - **Contents**:
-     - **[Project Management Plan]("governance/project%management%plan")**: Timelines, task lists, and other management-related files.
-     - **[Concept of Operations]("governance/concept%of%operations")**: Concept of operations document
-
-### 3. **`technical/`**
+### **`technical/`**
    - **Purpose**: The `technical` directory houses all the technical documentation, codebase, and resources related to the development of the project. This is the core directory where all technical work is organized and managed.
    - **Contents**:
      - **sub-systems**: code and technical documents for each sub-systems
