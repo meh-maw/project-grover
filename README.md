@@ -3,8 +3,6 @@ website - https://sites.google.com/view/project-grover/home
 
 <details>
 <summary>Repository structure and information on directories</summary>
-The repository is organized into three main directories under the root/home directory. Each directory serves a specific purpose, ensuring a clean and organized project structure.
-
 ## Directory Overview
 ### **`technical/`**
    - **Purpose**: The `technical` directory houses all the technical documentation, codebase, and resources related to the development of the project. This is the core directory where all technical work is organized and managed.
